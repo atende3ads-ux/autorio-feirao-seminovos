@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feirão Seminovos — Chevrolet com 2 anos de garantia | Autorio</title>
-<meta name="description" content="Feirão Seminovos Autorio: Chevrolet seminovos com laudo cautelar aprovado, 2 anos de garantia, entrada facilitada em 10x sem juros e taxas a partir de 0,99%.">
+<title>Feirão Seminovos — Até 2 anos de garantia | Autorio</title>
+<meta name="description" content="Feirão Seminovos Autorio: seminovos multimarcas com laudo cautelar aprovado, até 2 anos de garantia, entrada facilitada e taxas a partir de 0,99%.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/logo-feirao.webp">
+<link rel="preload" as="image" href="images/hero-multimarcas.webp" type="image/webp">
 
 <style>
 /* ===== Design Tokens — Feirão Seminovos Autorio (laranja + amarelo + grafite, CTA verde WhatsApp) ===== */
@@ -85,16 +85,18 @@ h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--primary-deep);margin-bottom:14
 .hero::after{width:300px;height:300px;left:-110px;top:38%;border:54px solid transparent;background:linear-gradient(135deg,var(--yellow),var(--orange)) border-box;-webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) padding-box exclude,linear-gradient(#000 0 0);opacity:.85}
 .hero .container{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(24px,5vw,64px);padding-block:clamp(36px,5vw,64px)}
 .hero-logo{width:min(100%,500px);justify-self:center;filter:drop-shadow(0 18px 24px rgba(90,40,0,.35))}
-.hero .eyebrow{color:var(--primary-deep)}
 .hero h1{margin-bottom:16px;max-width:16ch}
-.hero p{font-size:1.1rem;font-weight:500;max-width:46ch;color:#2b1a05}
+.hero-cars{width:100%;max-width:660px;aspect-ratio:8/3;object-fit:contain;margin:4px 0 12px;filter:drop-shadow(0 16px 18px rgba(90,40,0,.22))}
+.hero-offers{display:grid;gap:3px;font-size:1.02rem;font-weight:700;color:#2b1a05}
+.hero-note{margin-top:8px;font-size:.9rem;font-weight:600;color:#4d310d}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
 
 /* ===== Faixa de benefícios (identidade do Feirão) ===== */
 .benefits{background:linear-gradient(90deg,var(--orange-deep) 0%,var(--orange) 22%,#FBC04A 60%,var(--yellow) 100%);color:var(--primary-deep)}
 .benefits ul{display:grid;grid-template-columns:repeat(4,1fr)}
-.benefits li{display:flex;align-items:center;gap:14px;padding:26px 20px;border-left:1px solid rgba(0,0,0,.14)}
+.benefits li{display:flex;align-items:center;gap:14px;min-width:0;padding:26px 20px;border-left:1px solid rgba(0,0,0,.14)}
 .benefits li:first-child{border-left:0;padding-left:0}
+.benefits li div{min-width:0}
 .benefits svg{width:46px;height:46px;flex:none;fill:none;stroke:var(--primary-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .benefits span{display:block;font-size:.82rem;font-weight:600;text-transform:uppercase;line-height:1.2}
 .benefits strong{display:block;font-size:1.3rem;font-weight:900;text-transform:uppercase;line-height:1.05}
@@ -178,8 +180,8 @@ h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--primary-deep);margin-bottom:14
   .hero h1{font-size:clamp(1.6rem,7vw,2.2rem)}
   .hero p{font-size:1rem}
   .hero-cta{margin-top:20px}
-  .hero .eyebrow{justify-content:center}
   .hero h1,.hero p{margin-inline:auto}
+  .hero-cars{margin-inline:auto}
   .hero-cta{justify-content:center}
   .hero::before{width:380px;height:380px;right:-160px;top:-200px}
   .hero::after{display:none}
@@ -222,22 +224,6 @@ h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--primary-deep);margin-bottom:14
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="container">
-    <img class="hero-logo" src="images/logo-feirao.webp" alt="Feirão Seminovos Autorio" width="628" height="506">
-    <div>
-      <span class="eyebrow">Feirão Seminovos Autorio</span>
-      <h1>Seminovos Chevrolet com 2 anos de garantia</h1>
-      <p>Carros revisados, com laudo cautelar aprovado, entrada facilitada em 10x sem juros e taxas a partir de 0,99%. Escolha o seu e fale direto com um vendedor.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="https://tintim.link/whatsapp/da0e8764-2846-4dcc-a7d2-c2a6366cd91c/b88e49ea-9191-4a31-8c49-b676442bb331" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>Falar com vendedor</a>
-        <a class="btn btn-dark" href="#catalogo">Ver os seminovos</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== BENEFÍCIOS ===== -->
 <section id="condicoes" class="benefits" aria-label="Condições do Feirão">
   <div class="container">
@@ -259,6 +245,27 @@ h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--primary-deep);margin-bottom:14
         <div><strong class="big">2 anos</strong><span>de garantia</span></div>
       </li>
     </ul>
+  </div>
+</section>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <img class="hero-logo" src="images/logo-feirao.webp" alt="Feirão Seminovos Autorio" width="628" height="506">
+    <div>
+      <h1>Seminovos com até 2 anos de garantia</h1>
+      <img class="hero-cars" src="images/hero-multimarcas.webp" alt="Quatro veículos seminovos multimarcas lado a lado" width="1600" height="600" fetchpriority="high" decoding="async">
+      <ul class="hero-offers" aria-label="Condições em destaque">
+        <li>Entrada facilitada</li>
+        <li>Taxas a partir de 0,99%</li>
+        <li>Carros revisados e laudo cautelar aprovado</li>
+      </ul>
+      <p class="hero-note">Consulte condições.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://tintim.link/whatsapp/da0e8764-2846-4dcc-a7d2-c2a6366cd91c/b88e49ea-9191-4a31-8c49-b676442bb331" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>Falar com vendedor</a>
+        <a class="btn btn-dark" href="#catalogo">Ver os seminovos</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -678,8 +685,8 @@ h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--primary-deep);margin-bottom:14
       </div>
       <div class="legal">
         <h4>Informações legais</h4>
-        <p>Valores, veículos participantes, condições comerciais e opções de financiamento são meramente ilustrativos e podem sofrer alterações sem aviso prévio.</p>
-        <p>Ofertas válidas enquanto durar o estoque, sujeitas à análise de crédito, disponibilidade dos veículos e condições vigentes. Consulte um vendedor para as condições de entrada, taxas e garantia.</p>
+        <p>Feirão de Seminovos Autorio: ofertas válidas até 31/10. Taxas a partir de 0,99% ao mês, com 60% de entrada e saldo em até 24 parcelas, mediante financiamento pelo Banco GM, sujeito à aprovação de cadastro. Condições válidas para veículos a partir dos modelos 2022/2023.</p>
+        <p>Garantia de até 2 anos para veículos a partir do ano/modelo 2021, com até 100.000 km rodados, que não estejam cobertos pela garantia de fábrica e possuem produção nacional. Para os demais veículos, consulte as condições de garantia. Entrada em até 10x sem juros nos cartões Visa e Mastercard, limitada ao valor total de R$ 20.000,00.</p>
       </div>
     </div>
     <div class="footer-bottom">
